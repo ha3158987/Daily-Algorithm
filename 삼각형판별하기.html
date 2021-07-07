@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+      <!--최소한 짧은 두 변의 길이의 합이 가장 긴 변의 길이보다 '커야' 삼각형이 만들어진다.-->
+        <script>
+            function solution(a, b, c){
+              let answer, max;
+              //가장 먼저 제일 긴 막대의 길이를 구한다.
+              if (a > b) max = a;
+              else max = b;
+              if (c > max) max = c;
+              //세 막대의 합에서 max를 빼면 나머지 두 변의 길이의 합이 나온다.
+              let sum = a + b + c;
+              sum - max > max ? answer = "YES" : answer = "NO";
+              return answer;
+            }
+            console.log(solution(6, 7, 11));
+            console.log(solution(13, 33, 17));
+        </script>
+    </body>
+</html>
