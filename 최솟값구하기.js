@@ -6,3 +6,4 @@ function solution (arr) {
 
 console.log(solution([5, 67, 13, 2, 7, 11]))
 //Math.min()은 인자로 자연수를 받는다. 따라서 arr의 경우 spread operator로 펼쳐서 인자를 전달해야 한다.
+//return Math.min.apply(null, arr);  로 구하는 방법도 있다.
