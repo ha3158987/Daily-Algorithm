@@ -38,5 +38,6 @@ function solution (str) {
   return answer;
 }
 
-
-console.log(solution('ItisTimeToStudy'));
+const string = 'ItisTimeToStudy';
+console.log(solution(string));
+console.log(string.toUpperCase()) //사실 이렇게 한방에 하는 것도 가능.
